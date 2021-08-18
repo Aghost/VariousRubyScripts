@@ -1,0 +1,14 @@
+SAAS=software as a service
+PAAS=platform as a service
+IAAS=infrastructure as a service
+CAPEX=capital expenditure
+OPEX=operational expenditure
+High Availability=your ability to ensure that a service remains available
+Scalability=your ability to grow rapidly or unimpeded
+Vertical Scaling=scaling Up
+Horizontal Scaling=scaling Out
+Elasticity=your ability to automatically shrink and grow to meet demand
+High Durability=your ability to recover from a disaster
+Fault Tolerance=your ability to prevent failure
+Disaster Recovery=your ability to recover from a failure
+Geo Distribution=your ability to deploy apps and data to regional datacenters around the globe
