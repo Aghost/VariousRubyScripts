@@ -1,0 +1,54 @@
+#! /usr/bin/env ruby
+#invisibles (seperated by #)#
+#　# ͏# ͏#######
+
+# RANDOM UNICODES
+# ⌨ ⸎ ∞ π Ⴟ ™
+
+# FRACTIONS
+# ¼ ½ ¾
+
+# DRAWING
+# BLOCK:
+# ▀▁▂▃▄▅▆▇█▉▊▋▌▍▎▏▐▔▕▖▗▘▙▚▛▜▝▞▟■□▢▣▤▧▨▪▫
+# CIRCLE:
+# ◉○◌◍◎●◐◑◒◓◔◕◖◗◯
+# SHADES:
+# ░▒▓
+
+BLOCK = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█']
+¾ = 0.75
+½ = 0.5
+¼ = 0.25
+π = 3.14159265
+
+BLOCK.each{|b| print b}; print " OBFUSCATOR "; BLOCK.reverse.each{|b| print b}; puts
+puts "π: " + (½ * (π/½)).to_s
+
+[¾ , ½ , ¼, π].each {|x| 　=rand(1..3); ->(　) {　*　}.call(　).times {x*　} }.each do |▨|
+  puts ▨
+end
+
+#TEST:
+class Test
+  def 　
+    puts "yes"
+  end
+
+  def  ͏
+    puts "yes"
+  end
+
+  def  ͏
+    puts "yes"
+  end
+
+  def test
+  　
+  ͏
+   ͏
+  end
+end
+
+test1 = Test.new
+test1.test()

@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+@　 = 0
+@™='a'.to_r.to_s.split('/')[0].ord
+　　=0
+
+def bah bi
+  i = 0
+  bi.each_char { |c| if c == '1' then i+=1 end }.each_char {|ec| print ec }.each_char { |eec| if eec < i.chr then i-=1; eec+=1 end }
+  return i.ord
+end
+
+def 　 e = [ ]
+  while @　<= (@™ + 32) do @™=@™%2==0 ? 42 : 41; e.push "#{(@　+=1).chr}#{(@™ = rand(48..96)).chr}".ord.to_s(2) end
+  return e
+end
+　.each{ |se| se.each_char{ |ec| ec.ord - @™ -(　　+=1)} }.shuffle.each{ |nt| (bah nt).to_i.to_s(3).split('2') }.each{ |du| print bah du }

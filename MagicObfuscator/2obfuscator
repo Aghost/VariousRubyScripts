@@ -1,0 +1,50 @@
+#! /usr/bin/env ruby
+#invisibles (seperated by #)#
+#　# ͏# ͏#######
+#
+# RANDOM UNICODES
+# ⌨ ⸎ ∞ π Ⴟ ™
+
+# FRACTIONS
+# ¼ ½ ¾
+
+# DRAWING
+# BLOCK:
+# ▀▁▂▃▄▅▆▇█▉▊▋▌▍▎▏▐▔▕▖▗▘▙▚▛▜▝▞▟■□▢▣▤▧▨▪▫
+# CIRCLE:
+# ◉○◌◍◎●◐◑◒◓◔◕◖◗◯
+# SHADES:
+# ░▒▓
+
+def ͏
+  return rand(0...99)
+end
+
+def 　
+  ▁="000"
+  ▂="001"
+  ▃="010"
+  ▄="011"
+  ▅="100"
+  ▆="101"
+  ▇="110"
+  █="111"
+
+  result = 0 
+
+  [▁,▂,▃,▄,▅,▆,▇,█].shuffle.each do|b|
+    x = rand(0...7)
+    y = b.to_i(2)
+    z = "#{x}#{x + y % 1 +(b.to_i(2))}#{y}".to_i(2)
+    xx = x % 2 == 0 ? 0 : 1
+    yy = y % 3 == 0 ? 0 : 1
+    zz = z % 4 == 0 ? 0 : 1
+    xxx = xx + x % 2 == 0 ? 1 : 0
+    yyy = yy + y % 2== 0 ? 1 : 0
+    zzz = zz + z % 2 == 0 ? 1 : 0
+    result += b.to_i(2) + "#{x}#{y}#{z}".to_i(2) + "#{xx}#{yy}#{zz}".to_i(2) + "#{xxx}#{yyy}#{zzz}".to_i(2)
+  end
+
+  return result
+end
+puts 　.times{|n|　 * n -  ͏}.to_s(2)
