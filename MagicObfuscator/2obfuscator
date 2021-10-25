@@ -47,4 +47,5 @@ def 　
 
   return result
 end
-puts 　.times{|n|　 * n -  ͏}.to_s(2)
+
+puts 　.times{ |n|　 * n -  ͏}.to_s(2).each_char { |m| print m == '0'?  ͏.to_s(2) : 　.to_s(2).each_char{ |l| l.to_i(2) } }
